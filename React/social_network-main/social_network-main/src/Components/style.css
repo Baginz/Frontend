@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.App {
+    background: rgb(236, 238, 238);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.Body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.wrapper_preloader {
+    position: relative;
+    height: 100%;
+}
+
+.wrapper_navbar_and_body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+
+@media (max-width: 1660px) {
+    .wrapper_navbar_and_body {
+        padding-right: 100px;
+    }
+
+    .Body {
+        min-width: 1150px;
+    }
+
+    .wrapper_preloader {
+        max-width: 1150px;
+        margin-left: 15%;
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 1660px) {
+    .wrapper_preloader {
+        width: 1200px;
+        margin-left: 25%;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1540px) {
+    .wrapper_preloader {
+        min-width: 100vh;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1438px) {
+    .Body {
+        margin-right: 10px;
+    }
+
+    .wrapper_preloader {
+        margin-left: 12%;
+    }
+}
+
+@media (max-width: 1290px) {
+    .wrapper_navbar_and_body {
+        margin-top: 0;
+        padding: 0;
+    }
+    .Body {
+        margin: 0;
+        min-width: 100%;
+        background: white;
+    }
+}
+
+@media (min-width: 1438px) {
+    .Body {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 415px) {
+    .Body {
+        background: white;
+    }
+}
+
+@media (max-width: 700px) {
+    .Body {
+        position: relative;
+    }
+    .Body::-webkit-scrollbar {
+        width: 0;
+    }
+
+}
+
+@media (min-width: 700px) {
+    .Body {
+        position: relative;
+    }
+    .Body::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .Body::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        height: 10px;
+        background-color: rgba(179, 182, 186, 0.5);
+    }
+
+    .Body::-webkit-scrollbar-track {
+        margin-top: 7px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@font-face {
+    font-family: 'bhromaon-icons';
+    src:  url('../fonts/bhromaon-icons.eot?spaujw');
+    src:  url('../fonts/bhromaon-icons.eot?spaujw#iefix') format('embedded-opentype'),
+      url('../fonts/bhromaon-icons.ttf?spaujw') format('truetype'),
+      url('../fonts/bhromaon-icons.woff?spaujw') format('woff'),
+      url('../fonts/bhromaon-icons.svg?spaujw#bhromaon-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'bhromaon-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-facebook-f:before {
+    content: "\e900";
+  }
+  .icon-linkedin:before {
+    content: "\e901";
+  }
+  .icon-pinterest:before {
+    content: "\e903";
+  }
+  .icon-quote-left:before {
+    content: "\e904";
+  }
+  .icon-twitter:before {
+    content: "\e905";
+  }
+  .icon-youtube:before {
+    content: "\e906";
+  }
+  .icon-menu-1:before {
+    content: "\e947";
+  }
+  .icon-arrow-down:before {
+    content: "\e946";
+    color: #fff;
+  }
+  .icon-check:before {
+    content: "\e90d";
+  }
+  .icon-like2:before {
+    content: "\e921";
+  }
+  .icon-search:before {
+    content: "\e936";
+  }

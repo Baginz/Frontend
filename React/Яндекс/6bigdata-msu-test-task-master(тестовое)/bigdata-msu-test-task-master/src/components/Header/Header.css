@@ -1,0 +1,26 @@
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 36px 50px 45px;
+}
+
+.header__title {
+  max-width: 460px;
+  margin: 0 auto ;
+  text-align: center;
+
+  color: #45852D;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+@media screen and (max-width: 476px) {
+  .header {
+    padding: 36px 30px 45px;
+  }
+
+  .header__title {
+    font-size: 32px;
+  }
+}

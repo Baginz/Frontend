@@ -1,0 +1,30 @@
+$title: #2c4058;
+$main-blue: #55b7ff;
+$main-purple: #7e5aff;
+
+%title {
+    color: $title;
+    font-size: 44px;
+    line-height: 22px;
+}
+
+%gotham-400 {
+    font-family: 'Gotham-Book', sans-serif;
+    font-weight: 400;
+}
+
+%gotham-700 {
+    font-family: 'Gotham-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%open-sans-400 {
+    font-family: 'Open-Sans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%open-sans-400-italic {
+    font-family: 'Open-Sans-Regular', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}

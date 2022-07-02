@@ -1,0 +1,518 @@
+/*Указал семейство шрифта для всей страницы, и плавный скрол по странице*/
+
+html {
+   scroll-behavior: smooth;
+   font-family: Roboto, sans-serif;
+}
+
+body {
+   min-width: fit-content;
+}
+
+/*Убрал отступы*/
+
+body,
+header,
+main,
+footer,
+section,
+h1,
+h2,
+h3,
+p {
+   margin: 0;
+}
+
+/*Убрал подчеркивания ссылок*/
+a {
+   text-decoration: none;
+}
+/*Задаю отступы каждой секции*/
+
+section {
+   padding-top: 75px;
+   padding-bottom: 75px;
+   color: white;
+}
+
+/*Задал контейнер для содержимого всего сайта*/
+
+.container {
+   margin: 0 auto;
+   width: 1440px;
+}
+/*Редактирую header*/
+/*Сделал цвет текста белый и черный фон*/
+.header {
+   background-color: black;
+   color: white;
+}
+/*Создал флекс контейнер для выравнивания по гризонтали логотипа и навигации*/
+.header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /*padding-left: 15px;*/
+}
+/*Задал логотип через псевдоэлемент ::before, а также задал форматирование тексту*/
+.logo::before {
+   content: url(" ../assets/svg/logo.svg ");
+   position: relative;
+   right: 10px;
+}
+
+.logo {
+   font-family: Forum;
+   font-size: 28px;
+   line-height: 50px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   padding-left: 10px; /*Подвинул лого*/
+}
+
+/*Обнулил стиль списков и добавил внутренние отступы к элементам списка*/
+
+.navigation li {
+   list-style: none;
+   padding-right: 76px;
+}
+
+.navigation li:last-child {
+   padding-right: 0;
+}
+
+/*Создал флекс контейнер из списка*/
+
+.navigation ul {
+   display: flex;
+   max-width: 720px;
+   justify-content: space-between;
+   align-items: center;
+   /*padding-left: 0px;
+   padding-right: 7px; оказалось не нужным но пока оставлю*/
+}
+
+/*Стили форматирования ссылок в меню навигации*/
+
+.navigation a,
+.footer a {
+   text-decoration: none;
+   font-style: normal;
+   font-weight: 200;
+   font-size: 22px;
+   line-height: 50px;
+   letter-spacing: 2px;
+   color: #ffffff;
+}
+/*Стили для заголовков секций*/
+
+.section-title {
+   font-family: Forum;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 80px;
+   line-height: 90px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+.white-section {
+   color: #9d8665;
+}
+
+/*Задаю фоновый цвет и фоновую картинку для welcome-section*/
+.welcome-section {
+   background-color: black;
+   background-image: url(../assets/img/background.jpg);
+   background-repeat: no-repeat;
+   background-position: calc(100% + 200px) calc(100%); /*calc(100% + 200px) calc(100% + 175px); Позиционирование фоновой картинки*/
+}
+
+/*Создаю контейнер для текстового содержимого*/
+
+.welcome-section__content {
+   width: 598px;
+   height: 390px;
+   margin: 97px 0 175px 0;
+}
+
+/*Задаю форматирование и стили для параграфа и кнопки*/
+.welcome-section__content p {
+   color: #ffffff;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 28px;
+   line-height: 33px;
+   letter-spacing: 2px;
+   padding-top: 16px;
+   margin-bottom: 87px;
+}
+
+.welcome-section__content button {
+   background-color: #710707;
+   width: 360px;
+   height: 75px;
+   border-radius: 10px;
+   font-weight: 100;
+   font-size: 22px;
+   line-height: 26px;
+   letter-spacing: 2px;
+   color: #ffffff;
+   border: none;
+}
+
+/*Создаю подчеркивание для заголовков при помощи псевдоэлемента*/
+
+.underline-title {
+   position: relative;
+}
+
+.underline-title::after {
+   content: "";
+   position: absolute;
+   bottom: -25px;
+   left: 0;
+   right: 0;
+   height: 3px;
+   background-color: #710707;
+}
+
+/*Делаю флекс контейнер для visiting-section*/
+
+.visiting-section__content {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 78px 60px;
+   margin-top: 100px;
+}
+
+/*Делаю из ссылки блочный элемент*/
+
+.visiting-vection__item {
+   display: block;
+}
+
+/*Стиль для заголовков в visiting-section__item*/
+.visiting-vection__item h3 {
+   font-family: Forum;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 32px;
+   line-height: 35px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   color: #000000;
+   margin-bottom: 22px;
+}
+/*Короткое подчеркивание для маленьких заголовков*/
+.underline-title-short {
+   position: relative;
+}
+
+.underline-title-short::after {
+   content: "";
+   position: absolute;
+   bottom: -12px;
+   left: 0;
+   right: 140px;
+   height: 2px;
+   background-color: #710707;
+}
+/*Указываем размер и нижний отступ для изображений в карточках visiting-section*/
+
+.visiting-vection__item img {
+   width: 440px;
+   height: 285px;
+   margin-bottom: 20px;
+}
+/*Стилизую все параграфы в карточках*/
+.visiting-vection__item p {
+   font-style: normal;
+   font-weight: 200;
+   font-size: 22px;
+   line-height: 26px;
+   color: #000000;
+}
+/*Стилизую последние параграфы в карточках*/
+.visiting-vection__item p:last-child {
+   font-size: 18px;
+   line-height: 21px;
+   margin-top: 10px;
+}
+/*Сделал черный цвет для секции*/
+.explore-section {
+   background-color: #000000;
+}
+/*Сделал флекс контейнер из секции explore*/
+.explore-section__content {
+   display: flex;
+   justify-content: space-between;
+}
+/*Ограничил ширину текстового контента в блоке*/
+.explore-section__item {
+   width: 660px;
+}
+/*Задал картинке размер и внешний отступ*/
+.explore-section__content img {
+   width: 720px;
+   height: 700px;
+   margin-top: 15px;
+}
+/*Стилизовал параграф для секции explore*/
+.explore-section__item p {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 22px;
+   line-height: 38px;
+   margin-bottom: 25px;
+}
+/*Задал отступ для h2 в секции explore*/
+.explore-section__item h2 {
+   margin-bottom: 103px;
+}
+
+.explore-section__item span {
+   color: #9d8665;
+}
+/*Сделал флекс контейнер из секции video*/
+.video-section__content {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 42px;
+}
+/*Стилизовал параграф для секции video*/
+.video-section p {
+   width: 720px;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 22px;
+   line-height: 38px;
+   color: #000000;
+   margin-top: 5px;
+}
+/*Имитация видео*/
+/* .video-section__video {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 1440px;
+   height: 629px;
+   margin-top: 13px;
+   background-image: url("../assets/video/poster.jpg");
+} */
+
+/*Верстаю панель для видео*/
+
+.panel {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 1440px;
+   height: 85px;
+   background-color: #000000;
+}
+
+[alt="Back"] {
+   width: 27px;
+   height: 30px;
+}
+[alt="Play"] {
+   width: 23px;
+   height: 30px;
+}
+[alt="Forward"] {
+   width: 27px;
+   height: 30px;
+}
+[alt="Scroll"] {
+   width: 820px;
+   height: 15px;
+}
+[alt="Volume"] {
+   width: 38px;
+   height: 30px;
+}
+[alt="ScrollVolume"] {
+   width: 155px;
+   height: 15px;
+}
+[alt="FullScreen"] {
+   width: 36px;
+   height: 36px;
+}
+
+/*Задаю цвет секции ticket-section*/
+
+.tickets-section {
+   background-color: #000000;
+}
+
+/*Делаю флекс контейнер из tickets-section__content*/
+
+.tickets-section__content {
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 100px;
+}
+/*Контейнер с текствым контентом делаю флекс контейнером, а так же указываю какю часть свое го контейнера он должен занимать*/
+.tickets-section__content-text {
+   flex-grow: 2;
+   display: flex;
+   justify-content: space-between;
+}
+/*Стилизую заголовки в текстовом контейнере*/
+.tickets-section__content-text h2 {
+   font-style: normal;
+   font-weight: bold;
+   font-size: 28px;
+   line-height: 33px;
+}
+/*Стилизую параграфы в текстовом контейнере*/
+.tickets-section__content-text p {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 22px;
+   line-height: 26px;
+   margin-top: 50px;
+}
+/*Создал два отдельных контейнера под 2 части формы покупки билетов*/
+.tickets-type {
+   text-align: left;
+   margin-left: 56px;
+}
+.tickets-type input {
+   width: 17px;
+   height: 17px;
+   margin-right: 21px;
+}
+.amount {
+   text-align: right;
+}
+
+.amount p {
+   text-align: left;
+   margin-top: 15px;
+   margin-bottom: 10px;
+}
+
+.amount input {
+   width: 140px;
+   height: 40px;
+   background-color: #000000;
+   border: #ffffff 3px solid;
+   color: #ffffff;
+   text-align: center;
+   margin-bottom: 27px;
+   outline: none;
+}
+
+.amount h3 {
+   margin-top: 25px;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 28px;
+   line-height: 33px;
+   letter-spacing: 1.65px;
+}
+
+.amount button {
+   margin-top: 50px;
+   width: 175px;
+   height: 50px;
+   border: none;
+   border-radius: 2px;
+   background: #ffffff;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 22px;
+   line-height: 26px;
+   letter-spacing: 2px;
+   color: #000000;
+}
+
+/*Сделал флекс контейнер из content-section__content*/
+
+.contacts-section__content {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 113px;
+}
+
+/*Стилизовал параграфы в секции*/
+.contacts-section__item p {
+   margin-bottom: 20px;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 22px;
+   line-height: 26px;
+   color: #000000;
+}
+/*Сделал отступ загаловку*/
+.contacts-section h2 {
+   margin-top: 3px;
+}
+/*Стилизовал заголовки в секции*/
+
+.contacts-section__item h3 {
+   margin-bottom: 36px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 28px;
+   line-height: 33px;
+   color: #000000;
+}
+
+/*Добавил внешний отступ картинке*/
+.contacts-section__content img {
+   margin-top: -10px;
+}
+/*Задал черный цвет секции и внутренний отступ */
+.footer {
+   background-color: black;
+   color: #ffffff;
+   padding: 60px 0;
+}
+/*Сделал флекс контейнер из footer-content*/
+.footer-content {
+   display: flex;
+   justify-content: space-between;
+}
+/*Добавил отступы спискам*/
+.footer-content ul {
+   margin-left: 110px;
+}
+/*Подвинул логотип*/
+.footer-content .logo {
+   margin-top: 17px;
+}
+.footer-content .logo::before {
+   padding-right: 11px;
+}
+/*Задал стилизацию элементам списков*/
+.footer-content li {
+   list-style: none;
+   font-style: normal;
+   font-weight: 200;
+   font-size: 22px;
+   line-height: 50px;
+   letter-spacing: 2px;
+}
+/* Стилизовал иконки для соц сетей*/
+.social {
+   display: flex;
+   justify-content: flex-end;
+   flex-grow: 2;
+   margin-top: 103px;
+}
+
+.img-wrapper {
+   width: 45px;
+   height: 45px;
+   margin-left: 23px;
+   border: #ffffff solid 2px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 50px;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 28px;
+    }
+
+    &__socials {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+
+    &__socials-item {
+        
+        & a {
+            color: transparent;
+            font-size: 0;
+        }
+
+        & i{
+            font-size: 16px;
+        }
+
+        &:not(:first-child) {
+            margin-left: 24px;
+        }
+        & a {
+            color: #fff;
+
+            &:hover {
+                color: #5474fd;
+            }
+        }
+    }
+}

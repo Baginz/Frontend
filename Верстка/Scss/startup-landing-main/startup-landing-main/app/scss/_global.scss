@@ -1,0 +1,17 @@
+body {
+  @extend %roboto-slab-regular;
+  color: #555555;
+}
+
+section {
+  padding: 90px 0;
+
+  @media screen and (max-width: 1024px) {
+    padding: 70px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+  }
+}
+

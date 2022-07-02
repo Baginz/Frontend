@@ -1,0 +1,104 @@
+.steps {
+    background: #333;
+    padding: 90px 0 110px;
+
+    &__title {
+        color: transparent;
+        font-size: 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0 68px;
+        position: relative;
+    }
+
+    &__item {
+        text-align: center;
+
+        &:nth-child(2) {
+            margin: 0 15px;
+        }
+
+        &:nth-child(2):before {
+            background: url("../img/dotts.svg") no-repeat;
+            content: "";
+            height: 100%;
+            left: 160px;
+            position: absolute;
+            top: -46px;
+            width: 775px;
+        }
+    }
+
+    &__icon {
+        background-color: #333;
+        font-size: 70px;
+        position: relative;
+        z-index: 2;
+
+        &--blue {
+            color: #5474fd;
+        }
+
+        &--red {
+            color: #ff6363;
+        }
+
+        &--aqua {
+            color: #00a2ff;
+        }
+    }
+
+    &__name {
+        font-family: "Aleo", serif;
+        font-size: 36px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .steps {
+        &__item {
+            &:nth-child(2):before {
+                left: 142px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .steps {
+        &__item {
+            &:nth-child(2):before {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .steps {
+        &__name {
+            font-size: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .steps {
+        padding: 45px 0 0;
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__name {
+            font-size: 24px;
+            margin-bottom: 80px;
+        }
+    }
+}

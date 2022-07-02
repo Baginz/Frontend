@@ -1,0 +1,17 @@
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__column-link:hover {
+  opacity: 0.5;
+  transition: ease 1s;
+  text-decoration: underline;
+}
+
+.footer__column-link:visited {
+  color: #fff;
+}

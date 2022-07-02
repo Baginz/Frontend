@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.button {
+    background-color: #5474fd;
+    border: none;
+    color: #ffffff;
+    font-family: "Aleo", serif;
+    font-size: 14px;
+    height: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: ease-in 0.3s;
+    width: 184px;
+
+    &:hover {
+        background-color: darken(#5474fd, 10%);
+    }
+}
+
+
+.button--link {
+    background: -moz-linear-gradient(222deg, rgba(84, 116, 253, 1) 61%, rgba(73, 107, 254, 1) 61%);
+    background: -webkit-linear-gradient(222deg, rgba(84, 116, 253, 1) 61%, rgba(73, 107, 254, 1) 61%);
+    background: linear-gradient(222deg, rgba(84, 116, 253, 1) 60%, rgba(73, 107, 254, 1) 60%);
+    display: block;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5474fd",endColorstr="#496bfe",GradientType=1);
+    font-size: 16px;
+    height: 60px;
+    letter-spacing: 1px;
+    padding: 23px 38px;
+    width: 225px;
+
+    &:hover {
+        background: darken(#5474fd, 10%)
+    }
+
+}

@@ -1,0 +1,118 @@
+.list_users {
+    border-right: 1px solid #b3b3b3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: white;
+    border-radius: 10px 0 0 0;
+}
+
+.list_users a {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: .1s;
+}
+.noFocusUser:hover{
+    background: #e7e7e7;
+}
+
+.focusUser {
+    background: #7797ef;
+}
+
+.focusUser:hover{
+    background: #5982ee;
+}
+
+.list_users a img {
+    background: white;
+    height: 90%;
+    border: 1px solid #b3b3b3;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.list_users::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f9f9fd;
+}
+
+.list_users::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cdcbcb;
+}
+
+.list_users::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+@media (max-width: 1289px) {
+    .list_users {
+        border-radius: 0;
+    }
+}
+@media (min-width: 1290px) {
+    .list_users {
+        border-radius: 10px 0 0 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .list_users {
+        min-width: 250px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .list_users {
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .list_users{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3333;
+    }
+    .hide_List_users{
+        display: none;
+    }
+}
+@media (min-width: 601px) {
+    .list_users{
+        position: relative;
+        z-index: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

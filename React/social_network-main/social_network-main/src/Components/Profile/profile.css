@@ -1,0 +1,472 @@
+.container_info_and_avatar {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+.container_posts_and_status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.container_status_and_name {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.Profile {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.container_avatar {
+    background: white;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper_butt_message {
+    width: 110px;
+}
+
+.wrapper_avatar {
+    overflow: hidden;
+    width: 290px;
+    border: 1px solid rgb(241, 239, 239);
+    border-radius: 3px;
+}
+
+.wrapper_avatar img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#change_photo {
+    display: none;
+}
+
+.input_camera div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    cursor: pointer;
+    transition: .3s;
+    transform: rotate(45deg);
+}
+
+.input_camera div:hover {
+    background: white;
+    transition: .3s;
+    opacity: 1;
+}
+
+.input_camera img {
+    width: 80%;
+    height: 80%;
+    transform: rotate(-45deg);
+}
+
+.input_camera div:hover img {
+    width: 90%;
+    height: 90%;
+}
+
+.myPostsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper_posts, .wrapper_posts_dont_my_page {
+    background: white;
+}
+
+.wrapper_posts .imgNoPost, .wrapper_posts_dont_my_page .imgNoPost {
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper_posts .imgNoPost img, .wrapper_posts_dont_my_page .imgNoPost img {
+    width: 200px;
+}
+
+.wrapper_posts .imgNoPost span, .wrapper_posts_dont_my_page .imgNoPost span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.wrapper_posts::-webkit-scrollbar {
+    width: 1px;
+}
+
+.wrapper_posts::-webkit-scrollbar-thumb {
+    background: #5982ee;
+}
+
+.wrapper_posts::-webkit-scrollbar-track {
+    margin-top: 5px;
+}
+
+
+.wrapper_text_butt {
+    padding: 10px;
+    background: white;
+}
+
+.wrapper_text_butt textarea {
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgb(236, 238, 238);
+    background: rgb(236, 238, 238);
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+
+.wrapper_text_butt textarea:focus {
+    border: 2px solid #5982ee;
+}
+
+.wrapper_text_butt textarea:hover {
+    background: rgb(230, 232, 232);
+}
+
+
+.wrapper_text_butt button {
+    background: white;
+    width: 100px;
+    height: 25px;
+    outline: none;
+    transition: .3s;
+    font-size: 15px;
+    border: 1px solid #5982ee;
+    color: #5982ee;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.wrapper_text_butt button:hover {
+    background: #5982ee;
+    color: white;
+}
+
+
+.wrapper_text_butt textarea::-webkit-scrollbar {
+    width: 3px;
+    background-color: white;
+}
+
+.wrapper_text_butt textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #dedede;
+}
+
+@media (max-width: 1430px) {
+    .container_avatar {
+        min-height: 400px;
+    }
+
+    .container_info_and_avatar {
+        min-width: 350px;
+    }
+}
+
+@media (min-width: 1430px) {
+    .container_avatar {
+        min-height: 400px;
+    }
+
+    .container_info_and_avatar {
+        min-width: 350px;
+    }
+}
+
+
+@media (max-width: 1290px) {
+    .container_avatar {
+        border-right: 1px solid #b3b3b3;
+        border-left: 1px solid #b3b3b3;
+    }
+
+
+    .wrapper_text_butt {
+        border-bottom: none;
+    }
+
+    .container_status_and_name {
+        border: none;
+    }
+
+    .container_posts_and_status {
+        margin: 0;
+        min-width: 450px;
+        border-radius: 0;
+    }
+
+    .myPostsContainer {
+        border-radius: 0;
+    }
+
+    .container_status_and_name {
+        box-shadow: none;
+        width: 100%;
+        min-height: 15%;
+    }
+
+    .container_avatar {
+        border-radius: 0;
+        border: none;
+    }
+
+    .wrapper_text_butt {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1291px) {
+
+    .container_status_and_name {
+        width: 100%;
+        min-height: 200px;
+        border: 1px solid #b3b3b3;
+    }
+
+    .container_avatar {
+        border: 1px solid #b3b3b3;
+    }
+
+    .wrapper_posts_dont_my_page, .wrapper_posts {
+        border-radius: 10px;
+        width: 100%;
+        margin-right: 20px;
+        border: 1px solid #b3b3b3;
+        min-height: 681px;
+    }
+
+    .wrapper_posts_dont_my_page {
+        min-height: 804px;
+    }
+
+    .wrapper_posts {
+        min-height: 681px;
+    }
+
+    .wrapper_text_butt {
+        border: 1px solid #b3b3b3;
+    }
+
+    .container_posts_and_status {
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+    .container_status_and_name {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .wrapper_text_butt {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .container_posts_and_status {
+        margin-left: 20px;
+    }
+
+    .container_avatar {
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_info_and_avatar {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .wrapper_avatar {
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .container_avatar {
+        min-height: 250px;
+    }
+
+    .input_camera div {
+        position: absolute;
+        bottom: 30px;
+        right: 25px;
+        border-radius: 50%;
+    }
+
+    .user_name {
+        font-size: 25px;
+        color: #474747;
+    }
+
+    .wrapper_buttons {
+        position: absolute;
+        bottom: 0;
+        z-index: 1111;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .wrapper_buttons {
+        position: absolute;
+        bottom: 15px;
+    }
+
+    .input_camera div {
+        position: absolute;
+        bottom: 35px;
+        right: 10px;
+        border-left: 1px solid rgb(241, 239, 239);
+    }
+
+    .user_name {
+        font-size: xx-large;
+        color: #474747;
+    }
+
+    .container_status_and_name {
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .container_status_and_name {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        min-height: 0;
+        padding: 10px;
+    }
+
+    .container_avatar {
+        position: absolute;
+        top: 65px;
+        max-width: 38%;
+        min-height: 200px;
+        border: none;
+
+    }
+
+    .wrapper_avatar {
+        max-width: 150px;
+        margin-top: 20px;
+    }
+
+    .input_camera div {
+        position: absolute;
+        z-index: 10;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .myPostsContainer {
+        position: absolute;
+        top: 270px;
+        left: 0;
+        right: 0;
+        height: auto;
+        background: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper_posts .imgNoPost, .wrapper_posts_dont_my_page .imgNoPost {
+        min-height: 50vh;
+       display: flex;
+        justify-content: center;
+    }
+
+    .wrapper_buttons {
+        position: absolute;
+        bottom: -30px;
+    }
+
+}
+
+
+@media (min-width: 700px) {
+    .wrapper_posts .imgNoPost, .wrapper_posts_dont_my_page .imgNoPost {
+        margin-top: 0;
+        padding-top: 300px;
+    }
+
+    .container_status_and_name {
+        padding: 10px 100px 0 10px;
+    }
+}
+
+@media (max-width: 415px) {
+    .wrapper_text_butt button {
+        font-size: 13px;
+    }
+
+    .wrapper_buttons {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        bottom: -10px;
+        padding-left: 2px;
+    }
+}
+
+
+@media (min-width: 415px) {
+    .wrapper_buttons {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

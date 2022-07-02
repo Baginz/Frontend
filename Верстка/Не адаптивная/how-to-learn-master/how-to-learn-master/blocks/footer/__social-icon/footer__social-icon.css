@@ -1,0 +1,11 @@
+.footer__social-icon {
+  margin-right: 10px;
+}
+
+.footer__social-icon:visited {
+  color: #fff;
+}
+
+.footer__social-icon:link {
+  color: #fff;
+}

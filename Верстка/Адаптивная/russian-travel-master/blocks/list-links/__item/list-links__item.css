@@ -1,0 +1,8 @@
+.list-links__item {
+  margin-right: 18px;
+}
+
+.list-links__item:last-child {
+  margin-right: 0;
+}
+

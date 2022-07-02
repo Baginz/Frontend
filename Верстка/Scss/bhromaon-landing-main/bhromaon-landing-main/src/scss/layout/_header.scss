@@ -1,0 +1,251 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+    height: 100vh;
+    background: url("../img/header-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__inner {
+        width: 650px;
+        padding: 270px 0 0;
+        position: relative;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing: 6px;
+        margin-bottom: 46px;
+    }
+
+    &__search {
+        background-color: #fff;
+        display: flex;
+        height: 60px;
+        margin: 0 auto 120px;
+        max-width: 650px;
+        padding: 2px;
+
+        & label {
+            color: transparent;
+            font-size: 0;
+        }
+
+        &-wrapper {
+            margin: 0 10px;
+        }
+    }
+
+    &__search-input {
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        width: 100%;
+    }
+    &__search-input::placeholder {
+        color: #999999;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    &__search-button {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 1px;
+        padding-left: 20px;
+    }
+
+    &__search-icon {
+        font-size: 26px;
+        margin-left: 14px;
+    }
+
+    &__scroll {
+       
+        height: 100px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-top: auto;
+        margin-bottom: 136px;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+        }
+
+        &-icon {
+            margin-top: 10px;
+            font-size: 8px;
+        }
+    }
+
+    &__navigation-wrapper {
+        width: 100%;
+        background-color: #5474fd;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 26px 0;
+    }
+
+    &__logo-link {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &__menu-toggle {
+        background: none;
+        border: none;
+        box-shadow: none;
+        font-size: 0;
+        height: auto;
+        line-height: 1;
+        padding: 0;
+
+        & span {
+            font-size: 40px;
+            color: #fff;
+        }
+    }
+
+    &__menu-list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__menu-item {
+        font-family: "Aleo", serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__menu-item:not(:first-child) {
+        margin-left: 43px;
+    }
+
+    &__menu-link {
+        color: #fff;
+
+        &:hover {
+            color: #333333;
+            transition: ease-in 0.3s;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        &__menu-toggle {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        &__navigation-wrapper {
+            order: -1;
+        }
+
+        &__inner {
+            padding-top: 180px;
+        }
+        // Opened burger menu
+        &__menu-list {
+            background: #5474fd;
+            display: block;
+            left: 0;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 80px;
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+            width: 100%;
+
+            li {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                padding: 30px;
+               
+
+                & a {
+                    padding: 30px;
+                }
+            }
+
+            &.open {
+                transform: translateX(0);
+            }
+        }
+
+        &__menu-item:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) { 
+    .header__inner {
+        width: 440px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        &__inner {
+            width: auto;
+        }
+
+        &__title {
+            font-size: 38px;
+        }
+
+        &__search {
+            flex-direction: column;
+            background-color: transparent;
+
+            &-input {
+                height: 90px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+
+            &-button {
+                margin: 0 auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

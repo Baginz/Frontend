@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Gotham-Book';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Gotham-Book'),
+        url('../fonts/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham-Book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Gotham-Bold'),
+        url('../fonts/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/Gotham-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open-Sans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Open-Sans-Regular'),
+        url('../fonts/Open-Sans-Regular.woff2') format('woff2'),
+        url('../fonts/Open-Sans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open-Sans-Regular-Italic';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Open-Sans-Italic'),
+        url('../fonts/Open-Sans-Regular-Italic.woff2') format('woff2'),
+        url('../fonts/Open-Sans-Regular-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'monticello-icons';
+    src: url('../fonts/monticello-icons.eot?4bjfvo');
+    src: url('../fonts/monticello-icons.eot?4bjfvo#iefix') format('embedded-opentype'),
+        url('../fonts/monticello-icons.ttf?4bjfvo') format('truetype'),
+        url('../fonts/monticello-icons.woff?4bjfvo') format('woff'),
+        url('../fonts/monticello-icons.svg?4bjfvo#monticello-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'monticello-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+    content: "\f004";
+    color: #fff;
+}
+
+.icon-clock:before {
+    content: "\f017";
+}
+
+.icon-inbox:before {
+    content: "\f01c";
+}
+
+.icon-marker:before {
+    content: "\f041";
+}
+
+.icon-phone:before {
+    content: "\f095";
+}

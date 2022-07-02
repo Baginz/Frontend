@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "asd", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-container {
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1210px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+}
+
+.btn {
+  border-radius: 4px;
+  font: 600 16px / 140% var(--font-family);
+  padding: 22px 47px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  @include desktop {
+    &:hover {
+      background-color: var(--color-main-hover);
+    }
+  }
+
+  &--primary {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    @include desktop {
+      &:hover {
+        background-color: var(--color-accent-hover);
+      }
+    }
+
+  }
+  &--secondary {
+    color: var(--color-white);
+    background-color: var(--color-main);
+    @include desktop {
+      &:hover {
+        background-color: var(--color-main-hover);
+      }
+    }
+
+  }
+}
+
+.btn--primary.focus-visible {
+  background-color: var(--color-accent-hover);
+}
+
+.btn--secondary.focus-visible {
+  background-color: var(--color-main-hover);
+}
+
+
+.title {
+  font: var(--middle-high-font);
+  color: var(--color-main);
+}
+
+@import "mixins";
+
+.custom-checkbox {
+  @include custom-checkbox;
+
+  &__content {
+    padding-left: 35px;
+    font: var(--middle-book);
+    color: var(--color-main);
+
+    &::before {
+      top: -3px;
+      border-color: var(--color-cameo);
+      border-radius: 4px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &::after {
+      top: -3px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../assets/image/svg/check.svg");
+      background-size: 15px 12px;
+    }
+  }
+}

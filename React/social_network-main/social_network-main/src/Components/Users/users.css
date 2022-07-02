@@ -1,0 +1,122 @@
+.window_users {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100%;
+    padding: 0 15px;
+}
+
+.wrapper_users {
+    margin-top: 15px;
+}
+
+.user {
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid rgb(241, 239, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 20px 0 10px;
+}
+
+.user:hover {
+    background: radial-gradient(circle, rgb(238, 237, 237) 0%, rgba(255, 255, 255, 1) 83%);
+}
+
+.navLink_wrapper {
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+.navLink_wrapper .name {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+}
+
+.navLink_wrapper .photo img {
+    background: white;
+    border: 1px solid rgb(241, 239, 239);
+    border-radius: 50%;
+}
+
+
+
+@media (max-height: 1144px) {
+    .navLink_wrapper .photo img{
+        margin: 5px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .user {
+        max-height: 70px;
+    }
+}
+
+@media (max-width: 1290px) {
+    .window_users {
+        border-radius: 0;
+    }
+}
+@media (min-width: 1290px) {
+    .window_users {
+        border-radius: 10px 10px 0 0;
+        border: 1px solid #b3b3b3;
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .navLink_wrapper .photo img{
+        margin: 5px;
+        max-width: 35px;
+        max-height: 35px;
+    }
+    .user {
+        max-height: 50px;
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 451px) {
+    .navLink_wrapper .photo img{
+        margin: 10px;
+        width: 80px;
+        height: 80px;
+    }
+    .user {
+        height: 100px;
+    }
+}
+
+@media (max-width: 780px) {
+    .navLink_wrapper .photo img{
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .user {
+        height: 70px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 781px) {
+    .navLink_wrapper .photo img{
+        margin: 10px;
+        width: 80px;
+        height: 80px;
+    }
+    .user {
+        height: 100px;
+    }
+}
+

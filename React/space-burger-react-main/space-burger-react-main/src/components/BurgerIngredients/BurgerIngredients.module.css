@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+}
+
+.ingredients {
+  overflow-y: scroll;
+  max-height: calc(100vh - 244px)
+}
+
+.ingredients::-webkit-scrollbar-track {
+  background-color: #2F2F37;
+}
+
+.ingredients::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ingredients::-webkit-scrollbar-thumb {
+  background-color: #8585AD;
+}
+
+.list-ingredients {
+  display: grid;
+  grid-template-columns: repeat(2, 272px);
+  grid-template-rows: repeat(auto-fit, 208px);
+  grid-column-gap: 24px;
+  grid-row-gap: 32px;
+  margin: 0 0 0 16px;
+  padding: 0;
+}

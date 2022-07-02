@@ -1,0 +1,12 @@
+.wrap {
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.error {
+  text-align: center;
+  max-width: 50%;
+  margin: 40px auto;
+}

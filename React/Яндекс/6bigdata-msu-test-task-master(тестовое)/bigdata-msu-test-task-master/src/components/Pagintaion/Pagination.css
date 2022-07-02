@@ -1,0 +1,36 @@
+.pagination {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px 50px 45px;
+}
+
+@media screen and (max-width: 476px)  {
+  .pagination {
+    padding: 15px 25px 45px;
+  }
+}
+
+.pagination__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.pagination__list-item {
+  list-style-type: none;
+}
+
+.pagination__number {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #45852D;
+  outline: none;
+  font-size: 20px;
+  border: 1px solid  #45852D;
+  transition: linear .3s;
+}
+
+.pagination__number:hover {
+  cursor: pointer;
+  background-color: #4c8d341e;;
+}

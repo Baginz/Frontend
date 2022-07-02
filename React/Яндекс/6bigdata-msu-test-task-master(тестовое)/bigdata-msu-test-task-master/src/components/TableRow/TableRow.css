@@ -1,0 +1,54 @@
+.table__body-cell {
+  border: 1px solid #45852D;
+  max-width: 150px;
+  width: 150px;
+  text-align: center;
+
+  font-size: 20px;
+}
+
+.table__poster {
+  margin: 5px;
+  width: 100px;
+  height: 150px;
+}
+
+.table__icon {
+  transition: linear .3s;
+}
+
+.table__icon_add:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  fill: #45852D;
+}
+
+.table__icon_delete:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  fill: #ce2424;
+}
+
+.table__body-cell_type_comment {
+  vertical-align: top;
+}
+
+.table__comment {
+  font-size: 16px;
+  width: 100%;
+  height: 167px;
+  margin: 0;
+  overflow-wrap: break-word;
+  overflow-y: scroll; 
+}
+
+.table__comment::-webkit-scrollbar {
+  width: 4px; 
+  background-color: #fff;
+}
+
+.table__comment::-webkit-scrollbar-thumb {
+  background-color: #45852D;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #f3faf7;
+}

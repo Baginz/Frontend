@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Catalog</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="icon" href="img/Favicon.ico">
+   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+   <link rel="apple-touch-icon" href="favicon/180.png">
+   <link rel="manifest" href="manifest.webmanifest">
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page__body">
+   <header class="main__header">
+      <nav class="main__navigation">
+          <div class="cite__navigation">
+            <a class="nav__info" href="#">Информация</a>
+            <a class="nav__foto" href="catalog.html">Фото и видео</a>
+            <a class="nav-logo" href="index.html">
+            <img class="header-logo" src="img/logo.svg" height="70" alt="Логотип Sedona">
+            </a>
+            <a class="nav__maps" href="#">Карта штата</a>
+            <a class="nav__link" href="#">Гостиницы</a>
+          </div>
+      </nav>
+</header>
+<main class="catalog-block">
+  <section class="filter-section">
+    <img class="filter-img" src="img/background.jpg" width="1200" height="217" alt="background foto">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <div class="infrastructure-block">
+          <div class="section__infrastructure">
+            <h3>Инфраструктура:</h3>
+              <label class="check option">
+                <input class="check__input" name="swimmingpool" type="checkbox" value="swimmingpool" checked>
+                  <span class="check__box"></span>
+                    Бассейн
+              </label>
+              <label class="check option">
+                <input class="check__input" name="parking" type="checkbox" value="parking">
+                  <span class="check__box"></span>
+                  Парковка
+              </label>
+              <label class="check option">
+                <input class="check__input" name="WiFi" type="checkbox" value="WiFi">
+                  <span class="check__box"></span>
+                  Wi-Fi
+              </label>
+          </div>
+          <div class="section-housing">
+            <h3>Тип жилья:</h3>
+              <label class="check option">
+                <input class="check__input" name="hotel" type="checkbox" value="hotel" checked>
+                <span class="check__box"></span>
+                  Гостиница
+              </label>
+              <label class="check option">
+                <input class="check__input" name="motel" type="checkbox" value="motel" checked>
+                  <span class="check__box"></span>
+                  Мотель
+              </label>
+              <label class="check option">
+                <input class="check__input" name="apartments" type="checkbox" value="apartments" checked>
+                  <span class="check__box"></span>
+                  Апартаменты
+              </label>
+          </div>
+          <div class="section-cost">
+            <p class="section-cost__head">Стоимость в сутки (Р):</p>
+              <div class="block-price">
+                <p class="section-cost__title">от 0</p>
+                <p class="section-cost__subtitle">До 3000</p>
+              </div>
+                <div class="filter">
+                  <div class="filter-range-wrapper">
+                    <div class="filter-range">
+                      <div class="filter-range-scale">
+                        <div class="filter-range-bar"></div>
+                          </div>
+                            <label class="filter-range-handle filter__min" id="filter-range-min">
+                              <input class="filter-range-handle filter__min" for="filter-range-min">
+                            </label>
+                            <label class="filter-range-handle max" id="filter-range-max">
+                              <input class="filter-range-handle max" style="left: 80%;">
+                            </label>
+                        </div>
+                      </div>
+                      <div class="button-show">
+                        <button class="button-filter" type="submit">Показать</button>
+                    </div>
+              </div>
+          </div>
+        </div>
+      </form>
+  </section>
+  <section class="sorting">
+      <div class="sorting-block">
+          <h2 class="sorting-block__head" href="#">Найдено: 3</h2>
+          <p class="sorting-block__title" href="#">Сортировка:</p>
+          <button class="button-price" href="#">По цене</button>
+          <button class="button-type" href="#">По типу</button>
+          <button class="button-rating" href="#">По рейтингу</button>
+        <div class="symbols">
+          <p class="symbols1"><span>&#9650<span></p>
+          <p class="symbols2"><span>&#9660</span></p>
+        </div>
+      </div>
+  <section class="booking-section">
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <div class="booking-block">
+        <div class="booking-hotel">
+          <img src="img/Layer 21.jpg" width="135" height="90" alt="Amara Resort & Spa">
+            <div class="booking">
+              <button class="booking-hotel__head" href="#">Amara Resort & Spa</button>
+                <div class="hotel-title">
+                  <p class="booking-hotel__title">Гостиница</p>
+                  <p class="booking-hotel__subtitle">От 4000 Р.</p>
+                </div>
+              <button class="button button-details" href="#">Подробнее</button>
+              <button class="button button-tobook" type="submit">Забронировать</button>
+            </div>
+            <div class="rating-block">
+              <div class="stars-block__row1">
+                <div class="stars-block__item">
+                  <label class="ratings__label" for="stars-rating__1">
+                    <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                  </label>
+                  <div class="stars__box"></div>
+                </div>
+                <div class="stars-block__item">
+                  <label class="ratings__label" for="stars-rating__2">
+                    <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                  </label>
+                  <div class="stars__box"></div>
+                </div>
+                <div class="stars-block__item">
+                  <label class="ratings__label" for="stars-rating__3">
+                    <input class="rating__input" id="stars-rating__3" type="radio" value="3" name="rating">
+                  </label>
+                  <div class="stars__box"></div>
+                </div>
+                <div class="stars-block__item">
+                  <label class="ratings__label" for="stars-rating__4">
+                    <input class="rating__input" id="stars-rating__4" type="radio" value="4" name="rating">
+                  </label>
+                  <div class="stars__box"></div>
+                </div>
+              </div>
+              <div class="rating-text__row1">
+                <p>Рейтинг: 8,5</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="booking-block">
+        <div class="booking-hotel">
+          <img src="img/Layer 89 copy.jpg" width="135" height="90" alt="Desert Quail Inn">
+            <div class="booking">
+              <button class="booking-hotel__head" href="#">Desert Quail Inn</button>
+                <div class="hotel-title">
+                  <p class="booking-motel__title">Мотель</p>
+                  <p class="booking-motel__subtitle">От 3000 Р.</p>
+                </div>
+              <button class="button button-details" href="#">Подробнее</button>
+              <button class="button button-tobook" type="submit">Забронировать</button>
+                <label class="ratings__label" for="stars-rating__1"></label>
+            </div>
+            <div class="rating-block">
+              <div class="stars-block__row2">
+                <div class="stars-block__item">
+                  <label class="ratings__label" for="stars-rating__1">
+                    <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                  </label>
+                  <div class="stars__box"></div>
+                </div>
+                <div class="stars-block__item">
+                  <label class="ratings__label" for="stars-rating__2">
+                    <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                  </label>
+                  <div class="stars__box"></div>
+                </div>
+                <div class="stars-block__item">
+                  <label class="ratings__label" for="stars-rating__3">
+                    <input class="rating__input" id="stars-rating__3" type="radio" value="3" name="rating">
+                    </label>
+                  <div class="stars__box"></div>
+                </div>
+              </div>
+              <div class="rating-text__row2">
+                <p>Рейтинг: 8,5</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="booking-block">
+        <div class="booking-hotel">
+          <img src="img/Rectangle.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+            <div class="booking">
+              <button class="booking-hotel__head" href="#">Villas at Poco Diablo</button>
+                <div class="hotel-title">
+                  <p class="booking-apartments__title">Апартаменты</p>
+                  <p class="booking-apartments__subtitle">От 2000 Р.</p>
+                </div>
+              <button class="button button-details" href="#">Подробнее</button>
+              <button class="button button-tobook" type="submit">Забронировать</button>
+            </div>
+            <div class="rating-block">
+              <div class="stars-block__row3">
+                <div class="stars-block__item">
+                  <label class="ratings__label" for="stars-rating__1">
+                    <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                  </label>
+                  <div class="stars__box"></div>
+                </div>
+                <div class="stars-block__item">
+                  <label class="ratings__label" for="stars-rating__2">
+                    <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                  </label>
+                  <div class="stars__box"></div>
+                </div>
+              </div>
+                <div class="rating-text__row3">
+                  <p>Рейтинг: 8,5</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </form>
+  </section>
+</main>
+<footer class="main-footer">
+   <section class="footer-contact">
+      <div><a class="contact-title" href="#">#visitsedona</a></div>
+      <div class="contact-tel">
+         ТЕЛ: <a class="contact-number" href="tel:+79456660166">+7(495) 666-01-66</a>
+      </div>
+   </section>
+   <section class="footer-social">
+      <ul class="social">
+         <li>
+            <a class="social__button" href="#">
+               <img src="img/twitter.svg" width="20" height="20"alt="Логотип twitter">
+            </a>
+         </li>
+         <li>
+            <a class="social__button" href="#">
+               <img src="img/fb-icon.svg" width="10" height="10" alt="Логтип facebook">
+            </a>
+         </li>
+         <li>
+            <a class="social__button" href="#">
+               <img src="img/youtube.svg" width="20" height="20" alt="Логотип Youtube">
+            </a>
+         </li>
+      </ul>
+   </section>
+   <section class="footer__website">
+      <p class="footer-title">Website by</p>
+      <a href="https://htmlacademy.ru" target="blank">
+         <img class="footer-img" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
+      </a>
+   </section>
+</footer>
+</body>
+</html>

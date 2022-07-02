@@ -1,0 +1,25 @@
+.grid-places__text {
+  max-width: 484px;
+  margin: 0 0 24px;
+
+  font-size: 18px;
+  line-height: 1.67;
+
+}
+
+.grid-places__text:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 956px){
+  .grid-places__text {
+    font-size: 16px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .grid-places__text {
+    margin: 0 16px 24px;
+  }
+}

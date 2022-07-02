@@ -1,0 +1,56 @@
+.spain {
+
+    &__left {
+        background: url("../img/spain-left.jpg");
+    }
+
+    &__right {
+        background: url("../img/spain-right.jpg");
+    }
+
+    &__left,
+    &__right {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    &__content {
+        padding-bottom: 103px;
+        padding-top: 226px;
+    }
+
+    &__content--right-side {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__card {
+        background-color: rgba(35, 35, 35, 0.902);
+        max-width: 540px;
+        padding: 52px 21px 48px 30px;
+    }
+
+    &__title, &__subtitle {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+    }
+
+    &__subtitle {
+        margin-bottom: 22px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.6;
+        margin-bottom: 46px;
+        word-spacing: -1px;
+    }
+}
